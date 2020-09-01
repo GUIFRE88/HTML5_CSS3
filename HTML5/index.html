@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- TAG SEMANTICAS -->
+    <!-- HEADER - Cabeçalho do site -->
+        <!-- NAV - Menu dentro do Heander, ou tags de navegação -->
+<!-- ARTICLE - Conteúdo principa da página -->
+    <!-- FIGURE - É uma imagem que tem valor semântico -->
+<!-- ASIDE - Barra lateral da página -->
+<!-- FOOT - Rodapé das páginas -->
+
+<html>
+    <head>
+        <title>Recursos do HTML5</title>
+    </head>
+    <body>
+
+        <header>
+
+            <nav>
+                    <li><a href=#>Home</a></li>
+                    <li><a href=#>Produtos</a></li>
+                    <li><a href=#>Contatos</a></li>
+            </nav>
+
+        </header>
+
+        <article>
+            <h1>Recursos do HTML 5</h1>
+
+            <!-- Adicionar um video diretamente no HTML -->
+            <div>
+                <video width="320" height="240" controls>
+                    <source src="C:\CURSOS\02 - HTML5 e CSS3 Técnicas Avançadas (Com Flexbox e 4 Projetos)\2. HTML5\2. Conhecendo a tag video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Adiciona uma tag de audio no HTML -->
+            <div>
+                <audio>
+                    <source src="musicas/musica.prc" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- Adiciona uma tag de imagem com legenda -->
+            <div>
+                <figure>
+                    <img src="google.png" alt="google">
+                    <figcaption>Um lindo campo de arroz</figcaption>
+                </figure>
+            </div>
+
+            <!-- Deixa um campo obrigatorio em HTML através do 'required' -->
+            <!-- Coloca um valor padrão dentro do campo em HTML através do 'placeholder' -->
+            <div>
+                <h3>Preencha o formulario para receber novidades</h3>
+                <form>
+                    <label>Nome:</label>
+                    <input type="text" name="name" required placeholder="Digite o seu nome">
+                    <input type="submit" name="Enviar">
+                </form>
+            </div>
+
+            <!-- Valida campo de E-mail através do HTML usando o 'type="email"' -->
+            <!-- Faz com que venha posicionado no campo, usando a propriedade 'autofocus' -->
+            <div>
+                <h3>Preencha o formulario de email</h3>
+                <form>
+                    <label>E-mail:</label>
+                    <input type="email" name="email" required placeholder="Digite o seu e-mail" autofocus>
+                    <input type="submit" name="Enviar">
+                </form>
+            </div>
+
+            <!--Determina a edição em tempo real em HTML-->
+            <div>
+                <p contenteditable="true">Este é um parágrafo que pode ser editado.</p>
+            </div>
+
+        </article>
+
+        <aside>
+            <p>Confira nossos produtos <a href="">Clicando aqui</a></p>
+        </aside>
+
+        <!-- Cria uma tag de detalhes -->
+        <details open="open">
+            <summary>Cachorro</summary>
+            <p>É um mamifero muito amigo do homem.</p>
+        </details>
+
+        <!-- Cria uma lista de itens -->
+        <form>
+            <p>Animais domesticos</p>
+            <input list="animais" name="animal">
+            <datalist id="animais">
+                <option value="Cachorro"></option>
+                <option value="Gato"></option>
+                <option value="Cavalo"></option>
+            </datalist>
+        </form>
+
+        <!-- Barra de progresso nativa do HTML -->
+        <p>Barra de Loading:</p>
+        <progress value="63" max="100">
+
+        <footer>
+            <p>Rodape</p>
+        </footer>
+
+    </body>
+</html>
